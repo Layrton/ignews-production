@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 

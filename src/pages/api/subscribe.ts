@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { NextApiRequest, NextApiResponse } from "next";
 import { query as q } from 'faunadb'
 import { getSession } from 'next-auth/client'

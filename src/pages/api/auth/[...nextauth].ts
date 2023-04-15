@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { query as q } from 'faunadb'
 
 import NextAuth from 'next-auth'

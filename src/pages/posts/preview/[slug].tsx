@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useSession } from "next-auth/client";
 import Head from "next/head";

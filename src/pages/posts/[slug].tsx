@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/client";
 import Head from "next/head";
@@ -57,9 +56,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
 
   const post = {
     slug,
-    // @ts-ignore
     title: RichText.asText(response.data.title),
-    // @ts-ignore
     content: RichText.asHtml(response.data.content),
     updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR', {
       day: '2-digit',
