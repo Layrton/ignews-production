@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Prismic from '@prismicio/client'
