@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextApiRequest, NextApiResponse } from "next"
 import { Readable } from 'stream'
 import Stripe from "stripe";
@@ -7,7 +8,7 @@ import { saveSubscription } from "./_lib/manageSubscription";
 
 async function buffer(readable: Readable) {
   const chunks = [];
-  
+
   for await (const chunk of readable) {
     chunks.push(
       typeof chunk === "string" ? Buffer.from(chunk) : chunk
